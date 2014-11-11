@@ -1,0 +1,187 @@
+2014-03-11 09:10:49 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:10:49 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:12:42 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:12:42 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:14:27 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:14:27 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:14:53 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:14:53 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:15:31 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:15:31 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:16:26 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:16:26 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:28:19 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:28:19 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:31:58 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:31:58 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:33:12 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:33:12 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:34:05 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:34:05 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:34:55 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:34:55 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:36:04 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:36:04 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:40:27 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:40:27 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:46:04 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:46:04 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:46:42 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:46:42 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:46:42 INFO MLog clients using log4j logging.
+2014-03-11 09:46:42 INFO Failed to get local InetAddress for VMID. This is unlikely to matter. At all. We'll add some extra randomness
+java.net.UnknownHostException: SH-Ubuntu-51: SH-Ubuntu-51
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1402)
+	at com.mchange.v2.c3p0.impl.C3P0ImplUtils.generateVmId(C3P0ImplUtils.java:120)
+	at com.mchange.v2.c3p0.impl.C3P0ImplUtils.<clinit>(C3P0ImplUtils.java:98)
+	at com.mchange.v2.c3p0.impl.PoolBackedDataSourceBase.<init>(PoolBackedDataSourceBase.java:227)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.<init>(AbstractPoolBackedDataSource.java:62)
+	at com.mchange.v2.c3p0.ComboPooledDataSource.<init>(ComboPooledDataSource.java:109)
+	at com.mchange.v2.c3p0.ComboPooledDataSource.<init>(ComboPooledDataSource.java:105)
+	at com.datayes.textmining.Utils.DBConnectionManager.createPools(DBConnectionManager.java:121)
+	at com.datayes.textmining.Utils.DBConnectionManager.readConfig(DBConnectionManager.java:91)
+	at com.datayes.textmining.Utils.DBConnectionManager.init(DBConnectionManager.java:68)
+	at com.datayes.textmining.Utils.DBConnectionManager.<init>(DBConnectionManager.java:39)
+	at com.datayes.textmining.Utils.DBConnectionManager.getInstance(DBConnectionManager.java:44)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.initDBConnection(BatchJob_Report.java:72)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.run(BatchJob_Report.java:110)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.main(BatchJob_Report.java:244)
+	at com.datayes.textmining.reportJobs.ReportBatch.main(ReportBatch.java:80)
+2014-03-11 09:46:42 INFO Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-03-11 09:46:42 INFO Create pool successfully: news
+2014-03-11 09:46:43 INFO Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> C3P0TestTable, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1e7yi9tj21ybl1rp87au|7e4e194f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1e7yi9tj21ybl1rp87au|7e4e194f, idleConnectionTestPeriod -> 480, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://10.20.111.101:3306/news?&useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 25000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-03-11 09:47:05 WARN Specified stream length 2531 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 09:47:05 WARN Specified stream length 24855 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 09:47:05 WARN Specified stream length 2289 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 09:47:05 WARN Specified stream length 2486 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 09:47:05 WARN Specified stream length 2164 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 09:47:32 WARN Specified stream length 20800 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 09:47:47 WARN Specified stream length 101 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 09:47:47 WARN Specified stream length 1737 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 09:48:08 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:48:08 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:53:12 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:53:12 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:59:54 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 09:59:54 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:01:23 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:01:23 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:06:20 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:06:20 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:08:33 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:08:33 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:10:02 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:10:02 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:14:16 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:14:16 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:28:54 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:28:54 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:29:06 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:29:06 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:29:07 INFO MLog clients using log4j logging.
+2014-03-11 10:29:07 INFO Failed to get local InetAddress for VMID. This is unlikely to matter. At all. We'll add some extra randomness
+java.net.UnknownHostException: SH-Ubuntu-51: SH-Ubuntu-51
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1402)
+	at com.mchange.v2.c3p0.impl.C3P0ImplUtils.generateVmId(C3P0ImplUtils.java:120)
+	at com.mchange.v2.c3p0.impl.C3P0ImplUtils.<clinit>(C3P0ImplUtils.java:98)
+	at com.mchange.v2.c3p0.impl.PoolBackedDataSourceBase.<init>(PoolBackedDataSourceBase.java:227)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.<init>(AbstractPoolBackedDataSource.java:62)
+	at com.mchange.v2.c3p0.ComboPooledDataSource.<init>(ComboPooledDataSource.java:109)
+	at com.mchange.v2.c3p0.ComboPooledDataSource.<init>(ComboPooledDataSource.java:105)
+	at com.datayes.textmining.Utils.DBConnectionManager.createPools(DBConnectionManager.java:121)
+	at com.datayes.textmining.Utils.DBConnectionManager.readConfig(DBConnectionManager.java:91)
+	at com.datayes.textmining.Utils.DBConnectionManager.init(DBConnectionManager.java:68)
+	at com.datayes.textmining.Utils.DBConnectionManager.<init>(DBConnectionManager.java:39)
+	at com.datayes.textmining.Utils.DBConnectionManager.getInstance(DBConnectionManager.java:44)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.initDBConnection(BatchJob_Report.java:72)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.run(BatchJob_Report.java:110)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.main(BatchJob_Report.java:244)
+	at com.datayes.textmining.reportJobs.ReportBatch.main(ReportBatch.java:80)
+2014-03-11 10:29:07 INFO Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-03-11 10:29:07 INFO Create pool successfully: news
+2014-03-11 10:29:07 INFO Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> C3P0TestTable, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1kbpkoxj225zp104rs60|53ce669e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1kbpkoxj225zp104rs60|53ce669e, idleConnectionTestPeriod -> 480, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://10.20.111.101:3306/news?&useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 25000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-03-11 10:29:36 WARN Specified stream length 3045 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 10:29:42 WARN Specified stream length 3941 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 10:29:56 WARN Specified stream length 7871 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 10:30:08 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:30:08 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:30:21 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:30:21 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:30:22 INFO MLog clients using log4j logging.
+2014-03-11 10:30:22 INFO Failed to get local InetAddress for VMID. This is unlikely to matter. At all. We'll add some extra randomness
+java.net.UnknownHostException: SH-Ubuntu-51: SH-Ubuntu-51
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1402)
+	at com.mchange.v2.c3p0.impl.C3P0ImplUtils.generateVmId(C3P0ImplUtils.java:120)
+	at com.mchange.v2.c3p0.impl.C3P0ImplUtils.<clinit>(C3P0ImplUtils.java:98)
+	at com.mchange.v2.c3p0.impl.PoolBackedDataSourceBase.<init>(PoolBackedDataSourceBase.java:227)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.<init>(AbstractPoolBackedDataSource.java:62)
+	at com.mchange.v2.c3p0.ComboPooledDataSource.<init>(ComboPooledDataSource.java:109)
+	at com.mchange.v2.c3p0.ComboPooledDataSource.<init>(ComboPooledDataSource.java:105)
+	at com.datayes.textmining.Utils.DBConnectionManager.createPools(DBConnectionManager.java:121)
+	at com.datayes.textmining.Utils.DBConnectionManager.readConfig(DBConnectionManager.java:91)
+	at com.datayes.textmining.Utils.DBConnectionManager.init(DBConnectionManager.java:68)
+	at com.datayes.textmining.Utils.DBConnectionManager.<init>(DBConnectionManager.java:39)
+	at com.datayes.textmining.Utils.DBConnectionManager.getInstance(DBConnectionManager.java:44)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.initDBConnection(BatchJob_Report.java:72)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.run(BatchJob_Report.java:110)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.main(BatchJob_Report.java:244)
+	at com.datayes.textmining.reportJobs.ReportBatch.main(ReportBatch.java:80)
+2014-03-11 10:30:22 INFO Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-03-11 10:30:22 INFO Create pool successfully: news
+2014-03-11 10:30:23 INFO Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> C3P0TestTable, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1a24lj5j2267u1x44440|5ba8773c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1a24lj5j2267u1x44440|5ba8773c, idleConnectionTestPeriod -> 480, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://10.20.111.101:3306/news?&useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 25000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-03-11 10:30:23 WARN Specified stream length 7871 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 10:30:23 WARN Specified stream length 90554 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 10:30:34 WARN Specified stream length 2796 is wrong. Fall back to reading stream until 'endstream'.
+2014-03-11 10:33:31 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:33:31 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:35:07 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:35:07 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:39:30 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:39:30 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:40:17 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:40:17 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:42:15 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:42:15 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:44:20 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:44:20 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:45:01 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:45:01 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:47:45 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:47:45 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:48:15 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:48:15 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:49:09 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:49:09 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:51:21 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:51:21 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:58:20 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 10:58:20 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 11:00:45 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 11:00:45 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 11:05:44 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 11:05:44 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 11:05:59 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 11:05:59 INFO Using Proxy: 10.21.136.81:8080
+2014-03-11 11:05:59 INFO MLog clients using log4j logging.
+2014-03-11 11:05:59 INFO Failed to get local InetAddress for VMID. This is unlikely to matter. At all. We'll add some extra randomness
+java.net.UnknownHostException: SH-Ubuntu-51: SH-Ubuntu-51
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1402)
+	at com.mchange.v2.c3p0.impl.C3P0ImplUtils.generateVmId(C3P0ImplUtils.java:120)
+	at com.mchange.v2.c3p0.impl.C3P0ImplUtils.<clinit>(C3P0ImplUtils.java:98)
+	at com.mchange.v2.c3p0.impl.PoolBackedDataSourceBase.<init>(PoolBackedDataSourceBase.java:227)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.<init>(AbstractPoolBackedDataSource.java:62)
+	at com.mchange.v2.c3p0.ComboPooledDataSource.<init>(ComboPooledDataSource.java:109)
+	at com.mchange.v2.c3p0.ComboPooledDataSource.<init>(ComboPooledDataSource.java:105)
+	at com.datayes.textmining.Utils.DBConnectionManager.createPools(DBConnectionManager.java:121)
+	at com.datayes.textmining.Utils.DBConnectionManager.readConfig(DBConnectionManager.java:91)
+	at com.datayes.textmining.Utils.DBConnectionManager.init(DBConnectionManager.java:68)
+	at com.datayes.textmining.Utils.DBConnectionManager.<init>(DBConnectionManager.java:39)
+	at com.datayes.textmining.Utils.DBConnectionManager.getInstance(DBConnectionManager.java:44)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.initDBConnection(BatchJob_Report.java:72)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.run(BatchJob_Report.java:110)
+	at com.datayes.algorithm.textmining.anouncement.summary.summarizer.main.BatchJob_Report.main(BatchJob_Report.java:244)
+	at com.datayes.textmining.reportJobs.ReportBatch.main(ReportBatch.java:80)
+2014-03-11 11:05:59 INFO Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-03-11 11:05:59 INFO Create pool successfully: news
+2014-03-11 11:06:00 INFO Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> C3P0TestTable, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> i19lvlj22cntfsimwt|540984b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> i19lvlj22cntfsimwt|540984b, idleConnectionTestPeriod -> 480, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://10.20.111.101:3306/news?&useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 25000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-03-11 11:06:30 WARN Specified stream length 2327 is wrong. Fall back to reading stream until 'endstream'.

@@ -1,0 +1,14 @@
+lsc label everage quality:5.008761449621665
+cateCnt: 1 ===> lcsCnt:945
+cateCnt: 2 ===> lcsCnt:1118
+cateCnt: 3 ===> lcsCnt:1139
+cateCnt: 4 ===> lcsCnt:839
+cateCnt: 5 ===> lcsCnt:828
+cateCnt: 6 ===> lcsCnt:652
+cateCnt: 7 ===> lcsCnt:536
+cateCnt: 8 ===> lcsCnt:371
+cateCnt: 9 ===> lcsCnt:257
+
+全部：
+coverage rate: 32118.0/32667 = 0.9831940490403159
+
